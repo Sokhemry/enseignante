@@ -1,1 +1,321 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mon espace FLE | Apprendre le français</title>
+
+<style>
+:root {
+  --corail: #FF8066;
+  --creme: #FFF4EF;
+  --texte: #344054;
+  --vert: #A8CDB5;
+  --blanc: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--creme);
+  color: var(--texte);
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--corail);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texte);
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--corail);
+}
+
+.hero {
+  padding: 75px 8%;
+  text-align: center;
+  background: var(--creme);
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: var(--corail);
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: var(--corail);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(220px, 1fr)
+  );
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .emoji {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: var(--corail);
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: var(--texte);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.assistant {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+}
+
+.assistant input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.assistant button {
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--texte);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  section {
+    padding: 40px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌸 Mon espace FLE</div>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#cours">Apprendre</a>
+    <a href="#assistant">Mon assistant</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="accueil">
+  <h1>Bienvenue dans ton <span>espace FLE !</span></h1>
+
+  <p>
+    Apprends le français à ton rythme.
+    Découvre de nouveaux mots, comprends la grammaire
+    et amuse-toi avec des activités interactives.
+  </p>
+
+  <a href="#cours" class="btn">
+    Commencer à apprendre
+  </a>
+</section>
+
+<section id="cours">
+
+  <h2 class="section-title">
+    📚 Explore ton espace d'apprentissage
+  </h2>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="emoji">📝</div>
+      <h3>Vocabulaire</h3>
+      <p>
+        Découvre de nouveaux mots et expressions en français.
+      </p>
+      <a href="#">Découvrir →</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">📖</div>
+      <h3>Grammaire</h3>
+      <p>
+        Apprends les règles essentielles avec des exemples simples.
+      </p>
+      <a href="#">Apprendre →</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🎧</div>
+      <h3>Communication</h3>
+      <p>
+        Écoute, lis et pratique le français dans des situations quotidiennes.
+      </p>
+      <a href="#">S'entraîner →</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🎮</div>
+      <h3>Jeux et quiz</h3>
+      <p>
+        Teste tes connaissances avec des activités amusantes.
+      </p>
+      <a href="#">Jouer →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="assistant">
+
+  <h2 class="section-title">
+    🤖 Mon assistant de français
+  </h2>
+
+  <div class="assistant">
+
+    <h3>Bonjour ! Je suis ton compagnon FLE.</h3>
+
+    <p>
+      Je peux t'aider à comprendre une leçon,
+      apprendre du vocabulaire et pratiquer le français.
+    </p>
+
+    <input
+      type="text"
+      id="question"
+      placeholder="Écris ta question ici..."
+    >
+
+    <button class="btn" onclick="demanderAide()">
+      Demander de l'aide
+    </button>
+
+    <p id="reponse" style="margin-top:20px;"></p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>🌸 Mon espace FLE | Apprendre le français avec plaisir</p>
+  <p>Niveau A1.1 – Espace pédagogique universitaire</p>
+</footer>
+
+<script>
+function demanderAide() {
+
+  const question =
+    document.getElementById("question").value;
+
+  const reponse =
+    document.getElementById("reponse");
+
+  if (question.trim() === "") {
+
+    reponse.textContent =
+      "Écris une question pour commencer !";
+
+  } else {
+
+    reponse.textContent =
+      "Bravo pour ta question ! Ton assistant IA sera bientôt connecté. En attendant, essaie de réfléchir à la réponse. 😊";
+
+  }
+}
+</script>
+
+</body>
+</html>
+
