@@ -251,6 +251,18 @@ footer {
 </style>
 </head>
 
+function afficherAnglais() {
+  const traductions = document.querySelectorAll(".anglais-cache");
+
+  traductions.forEach(function(element) {
+    if (element.style.display === "none") {
+      element.style.display = "";
+    } else {
+      element.style.display = "none";
+    }
+  });
+}
+
 <body>
 
 <header>
