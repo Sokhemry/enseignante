@@ -178,6 +178,76 @@ footer {
     padding: 40px 6%;
   }
 }
+  
+/* RUBRIQUE VOCABULAIRE */
+
+.vocabulaire {
+  background: #FFF4EF;
+  padding: 45px 8%;
+}
+
+.vocabulaire-container {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.vocabulaire h2 {
+  text-align: center;
+  color: #344054;
+  margin-bottom: 15px;
+}
+
+.vocabulaire p {
+  margin-bottom: 20px;
+}
+
+.vocabulaire table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vocabulaire th,
+.vocabulaire td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.vocabulaire th {
+  background: #FF8066;
+  color: white;
+}
+
+.vocabulaire button {
+  background: #FF8066;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.vocabulaire button:hover {
+  background: #e96d55;
+}
+
+.anglais-cache {
+  display: none;
+}
+
+.vocabulaire input {
+  width: 150px;
+  max-width: 100%;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 </style>
 </head>
 
@@ -256,74 +326,53 @@ footer {
   </div>
 </section>
 
-/* RUBRIQUE VOCABULAIRE */
 
-.vocabulaire {
-  background: #FFF4EF;
-  padding: 45px 8%;
-}
+<section class="vocabulaire" id="vocabulaire">
 
-.vocabulaire-container {
-  max-width: 850px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 18px;
-}
+  <div class="vocabulaire-container">
 
-.vocabulaire h2 {
-  text-align: center;
-  color: #344054;
-  margin-bottom: 15px;
-}
+    <h2>🥐 La nourriture française</h2>
 
-.vocabulaire p {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    <p>Découvre 20 mots de vocabulaire en français et en anglais.</p>
 
-.vocabulaire table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
+    <button onclick="afficherAnglais()">
+      Afficher / Masquer les traductions
+    </button>
 
-.vocabulaire th,
-.vocabulaire td {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
+    <table>
+      <thead>
+        <tr>
+          <th>Français</th>
+          <th class="anglais-cache">Anglais</th>
+        </tr>
+      </thead>
 
-.vocabulaire th {
-  background: #FF8066;
-  color: white;
-}
+      <tbody>
+        <tr><td>Le pain</td><td class="anglais-cache">Bread</td></tr>
+        <tr><td>Le fromage</td><td class="anglais-cache">Cheese</td></tr>
+        <tr><td>Le lait</td><td class="anglais-cache">Milk</td></tr>
+        <tr><td>Le beurre</td><td class="anglais-cache">Butter</td></tr>
+        <tr><td>Les œufs</td><td class="anglais-cache">Eggs</td></tr>
+        <tr><td>La viande</td><td class="anglais-cache">Meat</td></tr>
+        <tr><td>Le poulet</td><td class="anglais-cache">Chicken</td></tr>
+        <tr><td>Le poisson</td><td class="anglais-cache">Fish</td></tr>
+        <tr><td>Le riz</td><td class="anglais-cache">Rice</td></tr>
+        <tr><td>Les pâtes</td><td class="anglais-cache">Pasta</td></tr>
+        <tr><td>La pomme</td><td class="anglais-cache">Apple</td></tr>
+        <tr><td>La banane</td><td class="anglais-cache">Banana</td></tr>
+        <tr><td>L'orange</td><td class="anglais-cache">Orange</td></tr>
+        <tr><td>La fraise</td><td class="anglais-cache">Strawberry</td></tr>
+        <tr><td>La carotte</td><td class="anglais-cache">Carrot</td></tr>
+        <tr><td>La tomate</td><td class="anglais-cache">Tomato</td></tr>
+        <tr><td>La salade</td><td class="anglais-cache">Salad</td></tr>
+        <tr><td>La soupe</td><td class="anglais-cache">Soup</td></tr>
+        <tr><td>Le gâteau</td><td class="anglais-cache">Cake</td></tr>
+        <tr><td>La glace</td><td class="anglais-cache">Ice cream</td></tr>
+      </tbody>
+    </table>
 
-.vocabulaire button {
-  background: #FF8066;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.vocabulaire button:hover {
-  background: #e96d55;
-}
-
-.anglais-cache {
-  display: none;
-}
-
-@media(max-width:600px) {
-  .vocabulaire-container {
-    padding: 15px;
-  }
-}
+  </div>
+</section>
 
 <section id="assistant">
 
